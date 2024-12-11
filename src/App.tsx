@@ -1,23 +1,17 @@
-import { Link } from 'react-router-dom';
 import JSPlayground from './pages/JSPlayground';
 import Header from './components/Header';
+import { Route, Routes } from 'react-router-dom';
+import MDPreview from './pages/MDPreview';
 
 function App() {
     return (
         <div className='w-screen h-screen overflow-y-auto'>
             <Header/>
-            {/* <header>
-                <div></div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link
-                        </li>
-                    </ul>
-                </nav>
-            </header> */}
             <main>
-            <JSPlayground/>
+                <Routes>
+                    <Route path='/js-playground' element={<JSPlayground/>}/>
+                    <Route path='/mardown-editor' element={<MDPreview/>}/>
+                </Routes>
             </main>
         </div>
     )
