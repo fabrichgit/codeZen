@@ -33,13 +33,13 @@ function SidebarMD() {
         </a>
         <div className="w-full px-2">
             <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
-                <Link to="editor" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
-                    <MdOutlineEditNote/>
-                    <span className="ml-2 text-sm font-medium">Editor</span>
-                </Link>
                 <Link to="library" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
                     <LuLibrary/>
                     <span className="ml-2 text-sm font-medium">Library</span>
+                </Link>
+                <Link to="editor" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+                    <MdOutlineEditNote/>
+                    <span className="ml-2 text-sm font-medium">Editor</span>
                 </Link>
             </div>
         </div>

@@ -2,8 +2,8 @@ import MarkdownPreview from '@uiw/react-markdown-preview';
 
 function ItemLibMD({lib}: {lib: {title: string, description: string, example: string}}) {
   return (
-    <div className="block relative group transition hover:scale-105 hover:-rotate-1 md:w-[20rem] w-full">
-        <a href="#" target="_blank" className="block">
+    <div className="block relative group transition hover:scale-105 hover:-rotate-1 w-[20rem]">
+        <a href="#" target="_blank" className="block w-full">
             <div className="relative w-full rounded-2xl h-[10rem] overflow-hidden">
                 <MarkdownPreview source={lib.example} className="w-full h-full object-center object-cover p-5" />
                 <div className='absolute z-50 top-0 left-0 w-full h-full inset-0 hover:backdrop-blur-[1px]'></div>
