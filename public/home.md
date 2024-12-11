@@ -1,63 +1,62 @@
 <div align="center" style="padding: 40px; border-radius: 10px; color: #c9d1d9; font-family: Arial, sans-serif;">
 
-# 🚀 **Bienvenue sur CodeZen** 🧘‍♂️
+# 🚀 **Welcome to CodeZen** 🧘‍♂️
 
-**CodeZen** est votre espace dédié pour maîtriser l'art du code et améliorer vos compétences en algorithmique, tout en restant zen. Explorez nos exercices, écrivez votre code dans notre éditeur Markdown, et progressez à votre rythme !
+**CodeZen** is your dedicated space to master the art of coding and sharpen your algorithmic skills while staying zen. Explore our challenges, write your code in our Markdown editor, and progress at your own pace!
 
 </div>
 
-
 <div style="background-color: #161b22; padding: 20px; border-radius: 10px; margin: 20px 0;">
-<h2 align="center" style="color: #58a6ff;">🌟 Fonctionnalités principales</h2>
+<h2 align="center" style="color: #58a6ff;">🌟 Key Features</h2>
 
-### 📝 **Exercices Algorithmiques**
-- Plus de 20 exercices triés par niveau : *débutant, intermédiaire et avancé*.
-- Une page dédiée pour chaque exercice avec des descriptions détaillées.
-- Téléchargez vos solutions ou écrivez directement dans notre éditeur intégré.
+### 📝 **Algorithm Challenges**
+- Over 20 challenges sorted by level: *beginner, intermediate, and advanced*.
+- A dedicated page for each challenge with detailed descriptions.
+- Upload your solutions or write directly in our integrated editor.
 
-### ✍️ **Éditeur Markdown**
-- Un éditeur intégré pour rédiger, tester et partager votre code.
-- Compatible avec les fichiers texte, JavaScript, JSON, etc.
-- Sauvegardez et exportez facilement vos solutions.
+### ✍️ **Markdown Editor**
+- An integrated editor for drafting, testing, and sharing your code.
+- Compatible with text files, JavaScript, JSON, and more.
+- Easily save and export your solutions.
 
-### ⚡ **Design Moderne et Tech**
-- Interface utilisateur sombre et futuriste.
-- Une expérience pensée pour les développeurs.
+### ⚡ **Modern & Tech Design**
+- A sleek, dark interface tailored for developers.
+- An intuitive and futuristic user experience.
 
 </div>
 
 ---
 
 <div style="background-color: #21262d; padding: 20px; border-radius: 10px;">
-<h2 align="center" style="color: #58a6ff;">🎯 Pourquoi choisir CodeZen ?</h2>
+<h2 align="center" style="color: #58a6ff;">🎯 Why Choose CodeZen?</h2>
 
-- **Flexibilité :** Uploadez vos solutions ou travaillez en ligne.
-- **Éducation :** Développez vos compétences algorithmiques.
-- **Inspiration :** Découvrez des exercices stimulants pour booster votre créativité.
+- **Flexibility:** Upload your solutions or work online.
+- **Education:** Build your algorithmic skills.
+- **Inspiration:** Discover stimulating challenges to boost your creativity.
 
 </div>
 
 ---
 
 <div style="background-color: #0d1117; padding: 20px; border-radius: 10px;">
-<h2 align="center" style="color: #58a6ff;">📚 Commencez dès maintenant !</h2>
+<h2 align="center" style="color: #58a6ff;">📚 Get Started Today!</h2>
 
-1. **Créez un compte** pour accéder à tous les exercices.
-2. Explorez les défis disponibles sur la page [Exercices](#).
-3. Partagez vos solutions et apprenez avec la communauté.
+1. **Create an account** to access all challenges.
+2. Explore the available tasks on the [Challenges](#) page.
+3. Share your solutions and learn with the community.
 
 </div>
 
 ---
 
 <div align="center" style="background-color: #21262d; padding: 20px; border-radius: 10px; color: #c9d1d9;">
-<h2>📬 Restez connecté</h2>
-<p>Suivez-nous sur <a href="https://github.com/CodeZen" style="color: #58a6ff;">GitHub</a></p>
-<p>Contactez-nous pour toute question ou suggestion : <strong>support@codezen.dev</strong></p>
+<h2>📬 Stay Connected</h2>
+<p>Follow us on <a href="https://github.com/CodeZen" style="color: #58a6ff;">GitHub</a></p>
+<p>Reach out with any questions or suggestions: <strong>support@codezen.dev</strong></p>
 </div>
 
 ---
 
 <div align="center" style="margin-top: 20px; color: #8b949e;">
-✨ *CodeZen - Parce que coder est un art.* ✨
+✨ *CodeZen - Because coding is an art.* ✨
 </div>
