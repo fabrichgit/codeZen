@@ -32,7 +32,7 @@ const LoggerComponent = ({code}: {code: string}) => {
       >
         Run Code <VscRunAll/>
       </button>
-      <div className="h-full bg-gray-800 p-4 rounded-md overflow-auto">
+      <div className="h-full p-4 rounded-md overflow-auto">
         <SyntaxHighlighter language="bash" style={okaidia}>
             {logs?.join("\n")}
         </SyntaxHighlighter>
