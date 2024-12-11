@@ -1,22 +1,16 @@
-import  { useState } from 'react'
-import LoggerComponent from '../components/LoggerComponent'
+import { Route, Routes } from 'react-router-dom'
+import ConsoleJS from '../components/ConsoleJS'
+import Training from '../components/Training'
 
 function JSPlayground() {
 
-const [source, setSource] = useState<string>("")
-    
   return (
-    <div className="flex flex-col md:flex-row w-full h-screen">
-    <div className="w-full md:w-1/2 p-4">
-      <textarea
-        onChange={(e) => setSource(e.currentTarget.value)}
-        className="w-full h-full p-4 bg-neutral-950 text-white rounded-md border font-mono border-gray-700 focus:outline-none focus:ring-teal-500"
-        placeholder="Write your JavaScript code here"
-        rows={15}
-      ></textarea>
-    </div>
-    <LoggerComponent code={source}/>
-  </div>
+    <>
+    <Routes>
+      <Route path='console' element={<ConsoleJS/>}/>
+      <Route path='training' element={<Training/>}/>
+    </Routes>
+    </>
   )
 }
 

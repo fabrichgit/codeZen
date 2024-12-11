@@ -4,6 +4,7 @@ import { MdOutlineEditNote } from "react-icons/md";
 import { LuLibrary } from "react-icons/lu";
 import { SiCodeceptjs } from "react-icons/si"
 import { VscRunAll } from "react-icons/vsc";
+import { FaCodepen } from "react-icons/fa";
 
 function SidebarMD() {
 
@@ -39,11 +40,11 @@ function SidebarMD() {
             </a>
             <div className="w-full px-2">
                 <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
-                    <Link to="/js-playground/training" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
-                        <LuLibrary/>
+                    <Link to="/js-playground/training" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
+                        <FaCodepen/>
                         <span className="ml-2 text-sm font-medium">Training</span>
                     </Link>
-                    <Link to="/js-playground/console" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+                    <Link to="/js-playground/console" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                         <VscRunAll/>
                         <span className="ml-2 text-sm font-medium">Console</span>
                     </Link>
