@@ -19,7 +19,7 @@ function Header() {
             </p>
             </div>
             <div className="mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto">
-                <a className="flex gap-2 items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50" href="#pricing">
+                <a className="flex gap-2 items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50" target="_blank" href="https://github.com/tinkererPlayground/codeZen">
                     Give star <FaStar className="-translate-y-[2px]"/>
                 </a>
             </div>
