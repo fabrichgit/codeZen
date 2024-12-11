@@ -21,11 +21,11 @@ function SidebarMD() {
             </a>
             <div className="w-full px-2">
                 <div className="flex flex-col items-center w-full mt-3 border-t border-gray-700">
-                    <Link to="/markdown-editor/library" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+                    <Link to="/markdown-editor/library" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                         <LuLibrary/>
                         <span className="ml-2 text-sm font-medium hidden md:block">Library</span>
                     </Link>
-                    <Link to="/markdown-editor/editor" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300" href="#">
+                    <Link to="/markdown-editor/editor" className="flex items-center w-full h-12 px-3 mt-2 rounded hover:bg-gray-700 hover:text-gray-300">
                         <MdOutlineEditNote/>
                         <span className="ml-2 text-sm font-medium hidden md:block">Editor</span>
                     </Link>

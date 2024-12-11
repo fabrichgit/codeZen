@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "title": "Reverse a String",
+      "description": "Write a function that reverses a string.",
+      "level": "beginner"
+    },
+    {
+      "id": 2,
+      "title": "Fibonacci Sequence",
+      "description": "Generate the Fibonacci sequence up to a given number.",
+      "level": "intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Prime Numbers",
+      "description": "Find all prime numbers up to a given number.",
+      "level": "advanced"
+    },
+    {
+      "id": 4,
+      "title": "Palindrome Checker",
+      "description": "Check if a given string is a palindrome.",
+      "level": "beginner"
+    },
+    {
+      "id": 5,
+      "title": "Sum of Array",
+      "description": "Write a function that returns the sum of all numbers in an array.",
+      "level": "beginner"
+    },
+    {
+      "id": 6,
+      "title": "Factorial",
+      "description": "Calculate the factorial of a given number.",
+      "level": "beginner"
+    },
+    {
+      "id": 7,
+      "title": "Binary Search",
+      "description": "Implement a binary search algorithm.",
+      "level": "intermediate"
+    },
+    {
+      "id": 8,
+      "title": "Bubble Sort",
+      "description": "Sort an array using bubble sort.",
+      "level": "intermediate"
+    },
+    {
+      "id": 9,
+      "title": "Longest Substring Without Repeating Characters",
+      "description": "Find the longest substring without repeating characters.",
+      "level": "advanced"
+    },
+    {
+      "id": 10,
+      "title": "Anagram Checker",
+      "description": "Determine if two strings are anagrams of each other.",
+      "level": "beginner"
+    },
+    {
+      "id": 11,
+      "title": "Two Sum",
+      "description": "Find two numbers in an array that add up to a target sum.",
+      "level": "intermediate"
+    },
+    {
+      "id": 12,
+      "title": "Merge Sort",
+      "description": "Sort an array using merge sort.",
+      "level": "advanced"
+    },
+    {
+      "id": 13,
+      "title": "Find Duplicates",
+      "description": "Find duplicate numbers in an array.",
+      "level": "beginner"
+    },
+    {
+      "id": 14,
+      "title": "Matrix Rotation",
+      "description": "Rotate a 2D matrix 90 degrees clockwise.",
+      "level": "advanced"
+    },
+    {
+      "id": 15,
+      "title": "Count Vowels",
+      "description": "Count the number of vowels in a string.",
+      "level": "beginner"
+    },
+    {
+      "id": 16,
+      "title": "Find Missing Number",
+      "description": "Find the missing number in an array of consecutive integers.",
+      "level": "intermediate"
+    },
+    {
+      "id": 17,
+      "title": "Flatten Nested Arrays",
+      "description": "Flatten an array of nested arrays into a single array.",
+      "level": "intermediate"
+    },
+    {
+      "id": 18,
+      "title": "String Compression",
+      "description": "Compress a string using character counts.",
+      "level": "advanced"
+    },
+    {
+      "id": 19,
+      "title": "Validate Parentheses",
+      "description": "Check if a string of parentheses is valid.",
+      "level": "beginner"
+    },
+    {
+      "id": 20,
+      "title": "Maximal Rectangle",
+      "description": "Find the largest rectangle of 1's in a 2D binary matrix.",
+      "level": "advanced"
+    }
+  ]
+  

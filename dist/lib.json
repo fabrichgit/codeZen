@@ -1,0 +1,207 @@
+[
+  {
+    "title": "UML Diagram with Mermaid",
+    "description": "Create sequence diagrams to visualize workflows or interactions.",
+    "example": "```mermaid\nsequenceDiagram\n    participant Client\n    participant Server\n    Client->>Server: Request GET /users\n    Server-->>Client: JSON Response\n```"
+  },
+  {
+    "title": "Multi-Column Layout with Inline HTML",
+    "description": "Simulate columns in Markdown by combining inline HTML.",
+    "example": "<div style=\"display: flex; justify-content: space-between;\">\n  <div style=\"width: 45%;\">\n    ### Column 1\n    Content for the first column.\n  </div>\n  <div style=\"width: 45%;\">\n    ### Column 2\n    Content for the second column.\n  </div>\n</div>"
+  },
+  {
+    "title": "Advanced Data Table with Links and Images",
+    "description": "Add enriched tables with links and images for better data representation.",
+    "example": "| Product       | Description                              | Image                             |\n|---------------|------------------------------------------|-----------------------------------|\n| [Product A](#) | High-performance product for professionals | ![Image A](https://via.placeholder.com/50) |\n| [Product B](#) | Beginner-friendly product               | ![Image B](https://via.placeholder.com/50) |"
+  },
+  {
+    "title": "Conditional Content with Markdown Extensions",
+    "description": "Include conditional content based on specific flags or files.",
+    "example": "{!conditional.md}"
+  },
+  {
+    "title": "Task List with State Tracking",
+    "description": "Track task progress with metadata in lists.",
+    "example": "- [x] **Task 1**: Completed on 2024-12-01\n- [ ] **Task 2**: In progress - Deadline: 2024-12-15\n  - Sub-task: Analyze data\n- [ ] **Task 3**: Not started yet"
+  },
+  {
+    "title": "Annotated Code Blocks",
+    "description": "Add inline annotations to explain code in Markdown.",
+    "example": "```javascript\nfunction fibonacci(n) { // Recursive function\n  if (n <= 1) return n; // Base case\n  return fibonacci(n - 1) + fibonacci(n - 2); // Recursive calls\n}\nconsole.log(fibonacci(5)); // Outputs 5\n```"
+  },
+  {
+    "title": "API Documentation with Anchored Tables",
+    "description": "Document API endpoints with detailed tables and anchors.",
+    "example": "| Method  | Endpoint          | Description                       |\n|---------|--------------------|-----------------------------------|\n| GET     | [/api/users](#get-users) | Fetch all users                 |\n| POST    | [/api/users](#post-users) | Create a new user               |\n| PUT     | [/api/users/:id](#put-users) | Update an existing user         |\n| DELETE  | [/api/users/:id](#delete-users) | Delete a user                   |\n\n### Details\n#### GET /api/users\nReturns a JSON list of users."
+  },
+  {
+    "title": "Auto-Generated Table of Contents",
+    "description": "Generate a dynamic TOC in Markdown using extensions.",
+    "example": "<!-- toc -->\n# Introduction\n## Features\n## Benefits\n<!-- tocstop -->"
+  },
+  {
+    "title": "Executable Code Blocks with Outputs",
+    "description": "Include code examples with visible execution outputs, such as with Jupyter.",
+    "example": "```python\n# Solving a quadratic equation\nimport math\na, b, c = 1, -3, 2\ndelta = b**2 - 4*a*c\nroot1 = (-b + math.sqrt(delta)) / (2*a)\nroot2 = (-b - math.sqrt(delta)) / (2*a)\n(root1, root2)\n```"
+  },
+  {
+    "title": "Interactive Timeline with Mermaid",
+    "description": "Create a project timeline using Mermaid diagrams.",
+    "example": "```mermaid\ngantt\ntitle Project Development Timeline\ndateFormat YYYY-MM-DD\nsection Backend\nServer Setup :done, 2024-11-01, 2024-11-10\nAPI Development :active, 2024-11-11, 2024-12-10\nsection Frontend\nUI Design :2024-11-15, 2024-11-25\nReact Development :2024-11-26, 2024-12-20\nsection Testing\nIntegration & Validation :2024-12-21, 2024-12-30\n```"
+  },
+  {
+    "title": "Markdown with Embedded JSON Data",
+    "description": "Render and describe JSON directly in Markdown.",
+    "example": "```json\n{\n  \"name\": \"Markdown Test\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Render JSON inline!\"\n}\n```"
+  },
+  {
+    "title": "Checkbox with Custom Actions",
+    "description": "Use Markdown features in actions for interactive demos or tasks.",
+    "example": "- [x] Configure Markdown with a linter.\n- [ ] Add new examples to this list.\n- [ ] Create a repository of useful Markdown tips."
+  },
+  {
+    "title": "Collapsible Sections",
+    "description": "Hide and show sections to make large documents easier to read.",
+    "example": "<details>\n  <summary>Click to Expand!</summary>\n  \n  This is a collapsible section. Use it to organize large files.\n</details>"
+  },
+  {
+    "title": "Code Block Tabs",
+    "description": "Show multiple code languages with tabs using advanced Markdown processors.",
+    "example": "```tabbed-code\ntabs: [JavaScript, Python, Go]\n---\n**JavaScript**\n```javascript\nconsole.log('Hello, JavaScript!');\n```\n---\n**Python**\n```python\nprint('Hello, Python!')\n```\n---\n**Go**\n```go\nfmt.Println('Hello, Go!')\n```\n```"
+  },
+  {
+    "title": "Embedded Video",
+    "description": "Include an iframe for video tutorials or demos.",
+    "example": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" frameborder=\"0\" allowfullscreen></iframe>"
+  },
+  {
+    "title": "Emoji Highlights",
+    "description": "Use emojis to create a more engaging checklist or emphasize key points.",
+    "example": "- ✅ Task Completed\n- ⚠️ Warning Message\n- ❌ Issue Detected"
+  },
+  {
+    "title": "Custom Admonitions",
+    "description": "Create callout boxes to highlight notes, tips, or warnings.",
+    "example": "!!! note\n    This is a note.\n\n!!! warning\n    This is a warning.\n\n!!! success\n    Everything is okay!"
+  },
+  {
+    "title": "Advanced Diagrams with PlantUML",
+    "description": "Use PlantUML syntax for complex diagrams.",
+    "example": "```plantuml\n@startuml\nBob -> Alice : Hello!\nAlice -> Bob : Hi!\n@enduml\n```"
+  },
+  {
+    "title": "Embedded Math Equations",
+    "description": "Use LaTeX to embed advanced math equations.",
+    "example": "$$E = mc^2$$\n\nOr inline math: \\(a^2 + b^2 = c^2\\)"
+  },
+  {
+    "title": "Custom Buttons",
+    "description": "Add buttons using HTML for user interaction.",
+    "example": "<button onclick=\"alert('Hello World!')\">Click Me</button>"
+  },
+  {
+    "title": "Interactive Graphs",
+    "description": "Embed JavaScript-based interactive charts or graphs.",
+    "example": "<div id=\"chart\"></div>\n<script>\n// Chart.js or other libraries to render graphs here.\n</script>"
+  },
+  {
+    "title": "UML Diagram with Mermaid",
+    "description": "Create sequence diagrams to visualize workflows or interactions.",
+    "example": "```mermaid\nsequenceDiagram\n    participant Client\n    participant Server\n    Client->>Server: Request GET /users\n    Server-->>Client: JSON Response\n```"
+  },
+  {
+    "title": "Multi-Column Layout with Inline HTML",
+    "description": "Simulate columns in Markdown by combining inline HTML.",
+    "example": "<div style=\"display: flex; justify-content: space-between;\">\n  <div style=\"width: 45%;\">\n    ### Column 1\n    Content for the first column.\n  </div>\n  <div style=\"width: 45%;\">\n    ### Column 2\n    Content for the second column.\n  </div>\n</div>"
+  },
+  {
+    "title": "Advanced Data Table with Links and Images",
+    "description": "Add enriched tables with links and images for better data representation.",
+    "example": "| Product       | Description                              | Image                             |\n|---------------|------------------------------------------|-----------------------------------|\n| [Product A](#) | High-performance product for professionals | ![Image A](https://via.placeholder.com/50) |\n| [Product B](#) | Beginner-friendly product               | ![Image B](https://via.placeholder.com/50) |"
+  },
+  {
+    "title": "Conditional Content with Markdown Extensions",
+    "description": "Include conditional content based on specific flags or files.",
+    "example": "{!conditional.md}"
+  },
+  {
+    "title": "Task List with State Tracking",
+    "description": "Track task progress with metadata in lists.",
+    "example": "- [x] **Task 1**: Completed on 2024-12-01\n- [ ] **Task 2**: In progress - Deadline: 2024-12-15\n  - Sub-task: Analyze data\n- [ ] **Task 3**: Not started yet"
+  },
+  {
+    "title": "Annotated Code Blocks",
+    "description": "Add inline annotations to explain code in Markdown.",
+    "example": "```javascript\nfunction fibonacci(n) { // Recursive function\n  if (n <= 1) return n; // Base case\n  return fibonacci(n - 1) + fibonacci(n - 2); // Recursive calls\n}\nconsole.log(fibonacci(5)); // Outputs 5\n```"
+  },
+  {
+    "title": "API Documentation with Anchored Tables",
+    "description": "Document API endpoints with detailed tables and anchors.",
+    "example": "| Method  | Endpoint          | Description                       |\n|---------|--------------------|-----------------------------------|\n| GET     | [/api/users](#get-users) | Fetch all users                 |\n| POST    | [/api/users](#post-users) | Create a new user               |\n| PUT     | [/api/users/:id](#put-users) | Update an existing user         |\n| DELETE  | [/api/users/:id](#delete-users) | Delete a user                   |\n\n### Details\n#### GET /api/users\nReturns a JSON list of users."
+  },
+  {
+    "title": "Auto-Generated Table of Contents",
+    "description": "Generate a dynamic TOC in Markdown using extensions.",
+    "example": "<!-- toc -->\n# Introduction\n## Features\n## Benefits\n<!-- tocstop -->"
+  },
+  {
+    "title": "Executable Code Blocks with Outputs",
+    "description": "Include code examples with visible execution outputs, such as with Jupyter.",
+    "example": "```python\n# Solving a quadratic equation\nimport math\na, b, c = 1, -3, 2\ndelta = b**2 - 4*a*c\nroot1 = (-b + math.sqrt(delta)) / (2*a)\nroot2 = (-b - math.sqrt(delta)) / (2*a)\n(root1, root2)\n```"
+  },
+  {
+    "title": "Interactive Timeline with Mermaid",
+    "description": "Create a project timeline using Mermaid diagrams.",
+    "example": "```mermaid\ngantt\ntitle Project Development Timeline\ndateFormat YYYY-MM-DD\nsection Backend\nServer Setup :done, 2024-11-01, 2024-11-10\nAPI Development :active, 2024-11-11, 2024-12-10\nsection Frontend\nUI Design :2024-11-15, 2024-11-25\nReact Development :2024-11-26, 2024-12-20\nsection Testing\nIntegration & Validation :2024-12-21, 2024-12-30\n```"
+  },
+  {
+    "title": "Math Equations with LaTeX",
+    "description": "Display complex mathematical equations using LaTeX.",
+    "example": "```math\ny = ax^2 + bx + c\n```"
+  },
+  {
+    "title": "Collapsible Sections",
+    "description": "Create collapsible sections for better navigation.",
+    "example": "<details>\n  <summary>Click to expand</summary>\n  This is hidden text that becomes visible when clicked.\n</details>"
+  },
+  {
+    "title": "Code Syntax Highlighting",
+    "description": "Use syntax highlighting to display readable code.",
+    "example": "```json\n{\n  \"name\": \"Example\",\n  \"type\": \"demo\",\n  \"version\": \"1.0.0\"\n}\n```"
+  },
+  {
+    "title": "Embedded YouTube Video",
+    "description": "Embed YouTube videos in Markdown using HTML.",
+    "example": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/dQw4w9WgXcQ\" frameborder=\"0\" allowfullscreen></iframe>"
+  },
+  {
+    "title": "Footnotes",
+    "description": "Use footnotes for additional context or citations.",
+    "example": "This is a sentence with a footnote.[^1]\n\n[^1]: This is the footnote text."
+  },
+  {
+    "title": "Image Gallery with Lightbox",
+    "description": "Create an image gallery with clickable thumbnails.",
+    "example": "<a href=\"image1.jpg\" target=\"_blank\"><img src=\"thumb1.jpg\" alt=\"Image 1\" /></a>\n<a href=\"image2.jpg\" target=\"_blank\"><img src=\"thumb2.jpg\" alt=\"Image 2\" /></a>"
+  },
+  {
+    "title": "Custom Emoji Support",
+    "description": "Add custom emojis to enrich Markdown content.",
+    "example": "Hello, world! :rocket: :sparkles:"
+  },
+  {
+    "title": "Embedded External Content",
+    "description": "Embed external content like Twitter posts or GitHub gists.",
+    "example": "<script src=\"https://gist.github.com/username/gistid.js\"></script>"
+  },
+  {
+    "title": "Callouts for Notes and Warnings",
+    "description": "Highlight specific sections with callouts.",
+    "example": "> **Note:** This is an important note.\n> **Warning:** Proceed with caution!"
+  },
+  {
+    "title": "Advanced Mermaid Flowchart",
+    "description": "Design advanced flowcharts with Mermaid for decision trees.",
+    "example": "```mermaid\nflowchart TD\n    A[Start] --> B{Decision}\n    B -->|Yes| C[Do something]\n    B -->|No| D[Do something else]\n    C --> E[End]\n    D --> E[End]\n```"
+  }
+]
