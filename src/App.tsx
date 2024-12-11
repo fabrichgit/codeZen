@@ -9,7 +9,7 @@ function App() {
     const {pathname} = useLocation()
     
     return (
-        <div className='w-screen h-screen overflow-y-auto'>
+        <div className='w-screen h-screen overflow-y-auto bg-[#181f25] text-neutral-300'>
             <Header/>
             <main className='flex w-full h-full'>
                 {pathname !== "/" ? <SidebarMD/> : null}

@@ -29,7 +29,7 @@
 
 </div>
 
----
+
 
 <div style="background-color: #21262d; padding: 20px; border-radius: 10px;">
 <h2 align="center" style="color: #58a6ff;">🎯 Why Choose CodeZen?</h2>
@@ -40,7 +40,7 @@
 
 </div>
 
----
+
 
 <div style="background-color: #0d1117; padding: 20px; border-radius: 10px;">
 <h2 align="center" style="color: #58a6ff;">📚 Get Started Today!</h2>
@@ -51,7 +51,7 @@
 
 </div>
 
----
+
 
 <div align="center" style="background-color: #21262d; padding: 20px; border-radius: 10px; color: #c9d1d9;">
 <h2>📬 Contributes</h2>
@@ -59,7 +59,7 @@
 <p>Reach out with any questions or suggestions: <strong>hei.fabrich.2@gmail.com</strong></p>
 </div>
 
----
+
 
 <div align="center" style="margin-top: 20px; color: #8b949e;">
 ✨ *CodeZen - Because coding is an art.* ✨
