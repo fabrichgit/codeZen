@@ -6,12 +6,17 @@ function JSPlayground() {
 const [source, setSource] = useState<string>("")
     
   return (
-    <div className='flex justify-between w-full h-full'>
-        <div className='w-[50%] p-5'>
-            <textarea onChange={(e) => setSource(e.currentTarget.value)} name="" id="" className='bg-transparent w-full h-[60%] rounded-xl p-3'></textarea>
-        </div>
-        <LoggerComponent code={source}/>
+    <div className="flex flex-col md:flex-row w-full h-screen">
+    <div className="w-full md:w-1/2 p-4">
+      <textarea
+        onChange={(e) => setSource(e.currentTarget.value)}
+        className="w-full h-full p-4 bg-neutral-950 text-white rounded-md border font-mono border-gray-700 focus:outline-none focus:ring-teal-500"
+        placeholder="Write your JavaScript code here"
+        rows={15}
+      ></textarea>
     </div>
+    <LoggerComponent code={source}/>
+  </div>
   )
 }
 

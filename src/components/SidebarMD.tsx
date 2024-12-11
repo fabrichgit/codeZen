@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import { IoLogoMarkdown } from "react-icons/io5";
 import { MdOutlineEditNote } from "react-icons/md";
 import { LuLibrary } from "react-icons/lu";
+import { SiCodeceptjs } from "react-icons/si"
 
 function SidebarMD() {
 
@@ -14,20 +15,12 @@ function SidebarMD() {
             pathname.includes("/markdown-editor") ?
             <>
             <IoLogoMarkdown/>
-            <span className="ml-2 text-sm font-bold">
-                {
-                    pathname.includes("/markdown-editor") ? "Markdown" : ""
-                }
-            </span>
+            <span className="ml-2 text-sm font-bold">Markdown</span>
             </>
             :
             <>
-                <IoLogoMarkdown/>
-                <span className="ml-2 text-sm font-bold">
-                    {
-                        pathname.includes("/markdown-editor") ? "Markdown" : ""
-                    }
-                </span>
+                <SiCodeceptjs/>
+                <span className="ml-2 text-sm font-bold">JS</span>
             </>
         }
         </a>
