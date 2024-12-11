@@ -42,7 +42,7 @@
 <h2 align="center" style="color: #58a6ff;">📚 Get Started Today!</h2>
 
 1. **Create an account** to access all challenges.
-2. Explore the available tasks on the [Challenges](#) page.
+2. Explore the available tasks on the [Challenges](/js-playground/training) page.
 3. Share your solutions and learn with the community.
 
 </div>
@@ -50,9 +50,9 @@
 ---
 
 <div align="center" style="background-color: #21262d; padding: 20px; border-radius: 10px; color: #c9d1d9;">
-<h2>📬 Stay Connected</h2>
-<p>Follow us on <a href="https://github.com/CodeZen" style="color: #58a6ff;">GitHub</a></p>
-<p>Reach out with any questions or suggestions: <strong>support@codezen.dev</strong></p>
+<h2>📬 Contributes</h2>
+<p>Follow us on <a href="https://github.com/tinkererPlayground/codeZen" target="_blank" style="color: #58a6ff;">GitHub</a></p>
+<p>Reach out with any questions or suggestions: <strong>hei.fabrich.2@gmail.com</strong></p>
 </div>
 
 ---
