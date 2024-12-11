@@ -1,17 +1,15 @@
-import MarkdownPreview from '@uiw/react-markdown-preview';
-import { useState } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import MdEditor from '../components/MdEditor';
+import SidebarMD from '../components/SidebarMD';
 
 function MDPreview() {
-    const [source, setSource] = useState<string>("")
 
     return (
-        <div className='flex flex-col gap-4 md:flex-row justify-between w-full h-max md:h-full'>
-            <div className='w-full p-5 py-0'>
-                <textarea placeholder='# Write markdown here ...' onChange={(e) => setSource(e.currentTarget.value)} name="" id="" className='bg-transparent w-full h-[50vh] rounded-xl p-3'></textarea>
-            </div>
-            <div className='w-full h-max md:h-full overflow-y-auto'>
-                <MarkdownPreview source={source} style={{ padding: 16, width: "100%" }} />
-            </div>
+        <div className="flex w-full">
+            <SidebarMD/>
+            <Routes>
+                <Route path="/preview" element={<MdEditor/>}/>
+            </Routes>
         </div>
     )
 }

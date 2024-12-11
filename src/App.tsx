@@ -7,7 +7,7 @@ function App() {
     return (
         <div className='w-screen h-screen overflow-y-auto'>
             <Header/>
-            <main className='flex w-full h-full px-12 py-10'>
+            <main className='flex w-full h-full'>
                 <Routes>
                     <Route path='/js-playground' element={<JSPlayground/>}/>
                     <Route path='/markdown-editor' element={<MDPreview/>}/>
