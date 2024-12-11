@@ -1,6 +1,6 @@
 
 <div style="width: 100%; height: 20vh; overflow: hidden; border-radius: 1rem; " class="w-full h-[20vh] overflow-hidden">
-<img src="/zen.png" class="w-full"/>
+<img src="/public/zen.png" class="w-full"/>
 </div>
 <div align="center" style="padding: 40px; border-radius: 10px; color: #c9d1d9; font-family: Arial, sans-serif;">
 
