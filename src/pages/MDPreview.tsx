@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import MdEditor from '../components/MdEditor';
 import SidebarMD from '../components/SidebarMD';
+import MdLibrary from '../components/MdLibrary';
 
 function MDPreview() {
 
@@ -8,7 +9,8 @@ function MDPreview() {
         <div className="flex w-full">
             <SidebarMD/>
             <Routes>
-                <Route path="/preview" element={<MdEditor/>}/>
+                <Route path="editor" element={<MdEditor/>}/>
+                <Route path="library" element={<MdLibrary/>}/>
             </Routes>
         </div>
     )

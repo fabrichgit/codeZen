@@ -5,7 +5,7 @@ function MdEditor() {
     const [source, setSource] = useState<string>("")
 
     return (
-        <div className='flex flex-col gap-4 md:flex-row justify-between w-full h-max md:h-full'>
+        <div className='flex flex-col gap-4 md:flex-row justify-between w-full h-max py-5 md:h-full'>
             <div className='w-full p-5 py-0'>
                 <textarea placeholder='# Write markdown here ...' onChange={(e) => setSource(e.currentTarget.value)} name="" id="" className='bg-transparent w-full h-[50vh] rounded-xl p-3'></textarea>
             </div>

@@ -25,7 +25,7 @@ function Header() {
         </div>
         </div>
     </div>
-    <header className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg">
+    <header className="backdrop-filter backdrop-blur-lg border-b border-neutral-600">
         <nav className="container mx-auto px-6 py-4">
             <div className="flex justify-between items-center">
             <a href="#" className="text-2xl font-bold">Badr</a>

@@ -9,8 +9,8 @@ function App() {
             <Header/>
             <main className='flex w-full h-full'>
                 <Routes>
-                    <Route path='/js-playground' element={<JSPlayground/>}/>
-                    <Route path='/markdown-editor' element={<MDPreview/>}/>
+                    <Route path='/js-playground/*' element={<JSPlayground/>}/>
+                    <Route path='/markdown-editor/*' element={<MDPreview/>}/>
                 </Routes>
             </main>
         </div>
