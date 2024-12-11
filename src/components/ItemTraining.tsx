@@ -36,9 +36,38 @@ function ItemTraining({exercise}: {exercise: Exercise}) {
     const handleCodeChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       setCode(e.target.value);
     };
+
+
+
+    const [logs, setLogs] = useState<string[]>([]);
+
+  const captureLog = (...args: any[]) => {
+    setLogs((prevLogs) => [...prevLogs, args.map(arg => String(arg)).join(' ')]);
+  };
+
+  const executeCode = () => {
+    setLogs(_ => [])
+    const originalLog = console.log;
+    console.log = captureLog;
+
+    try {
+      new Function(code)();
+    } catch (error) {
+      console.error('Erreur lors de l\'exécution du code:', error);
+    } finally {
+      console.log = originalLog;
+    }
+  };
+
+  const submit = () => {
+    executeCode()
+    if(logs.length !== 1){
+        alert("Please, follows the guidelines")
+    }
+  }
   
     return (
-      <div className="w-full min-h-screen p-6">
+      <div className="w-full h-max p-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl font-bold mb-4">{exercise.title}</h1>
           <p className="text-gray-400 text-lg mb-6">{exercise.description}</p>
@@ -130,7 +159,7 @@ console.log(result);`
                 ></textarea>
               </div>
   
-              <button className="w-full py-3 bg-teal-600 hover:bg-teal-500 text-gray-100 font-semibold rounded-lg transition">
+              <button disabled={!Boolean(code)} onClick={submit} className="w-full py-3 bg-teal-600 hover:bg-teal-500 text-gray-100 font-semibold rounded-lg transition">
                 Submit Solution
               </button>
             </div>

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import useQuery from "../hook/useQuery";
 import ItemTraining from "./ItemTraining";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export type Exercise = {
     id: number;
@@ -9,27 +11,27 @@ export type Exercise = {
     level: 'beginner' | 'intermediate' | 'advanced';
   };
   
-const exercises: Exercise[] = [
-{
-    id: 1,
-    title: 'Reverse a String',
-    description: 'Write a function that reverses a string.',
-    level: 'beginner',
-},
-{
-    id: 2,
-    title: 'Fibonacci Sequence',
-    description: 'Generate the Fibonacci sequence up to a given number.',
-    level: 'intermediate',
-},
-{
-    id: 3,
-    title: 'Prime Numbers',
-    description: 'Find all prime numbers up to a given number.',
-    level: 'advanced',
-},
-// Ajoutez plus d'exercices ici
-];
+// const exercises: Exercise[] = [
+// {
+//     id: 1,
+//     title: 'Reverse a String',
+//     description: 'Write a function that reverses a string.',
+//     level: 'beginner',
+// },
+// {
+//     id: 2,
+//     title: 'Fibonacci Sequence',
+//     description: 'Generate the Fibonacci sequence up to a given number.',
+//     level: 'intermediate',
+// },
+// {
+//     id: 3,
+//     title: 'Prime Numbers',
+//     description: 'Find all prime numbers up to a given number.',
+//     level: 'advanced',
+// },
+// // Ajoutez plus d'exercices ici
+// ];
 
 const levelColors = {
     beginner: 'bg-green-100 text-green-800',
@@ -44,8 +46,8 @@ return (
     <div className="overflow-hidden">
       <div className="relative rounded-2xl h-48 overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center bg-gradient-to-r from-indigo-400 via-teal-400 to-indigo-400 opacity-40"></div>
-        <div className="absolute inset-0 flex justify-center items-center">
-          <h2 className="text-2xl font-extrabold text-white drop-shadow-lg">{exercise.title}</h2>
+        <div className="absolute inset-0 px-2 flex justify-center items-center">
+          <h2 className="text-center text-2xl font-extrabold text-white drop-shadow-lg">{exercise.title}</h2>
         </div>
       </div>
       <div className="p-6 text-gray-300">
@@ -71,7 +73,15 @@ return (
 
 function Training() {
 
+    const [exercises, setExercises] = useState<Exercise[]>([])
     const id = useQuery("id")
+
+    useEffect(() => {
+      axios.get("/js.json")
+      .then(res => {
+        setExercises(res.data)
+      })
+  }, [])
 
     const oneTrain = id ? exercises?.find(ex => String(ex.id) === id) : null
 
