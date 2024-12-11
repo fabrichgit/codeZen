@@ -1,16 +1,27 @@
-import MarkdownPreview from '@uiw/react-markdown-preview';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import JSPlayground from './pages/JSPlayground';
+import Header from './components/Header';
 
 function App() {
-    const [source, setSource] = useState<string>("")
     return (
-        <div className='flex justify-between w-full h-full'>
-            <div className='w-full p-5'>
-                <textarea onChange={(e) => setSource(e.currentTarget.value)} name="" id="" className='bg-transparent w-full h-[60%] rounded-xl p-3'></textarea>
-            </div>
-            <MarkdownPreview source={source} style={{ padding: 16, width: "50%" }} />
+        <div className='w-screen h-screen overflow-y-auto'>
+            <Header/>
+            {/* <header>
+                <div></div>
+                <nav>
+                    <ul>
+                        <li>
+                            <Link
+                        </li>
+                    </ul>
+                </nav>
+            </header> */}
+            <main>
+            <JSPlayground/>
+            </main>
         </div>
     )
+ 
 }
 
 export default App
