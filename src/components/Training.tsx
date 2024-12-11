@@ -1,4 +1,8 @@
-type Exercise = {
+import { Link } from "react-router-dom";
+import useQuery from "../hook/useQuery";
+import ItemTraining from "./ItemTraining";
+
+export type Exercise = {
     id: number;
     title: string;
     description: string;
@@ -27,12 +31,13 @@ const exercises: Exercise[] = [
 // Ajoutez plus d'exercices ici
 ];
 
-const ExerciseCard: React.FC<{ exercise: Exercise }> = ({ exercise }) => {
 const levelColors = {
     beginner: 'bg-green-100 text-green-800',
     intermediate: 'bg-yellow-100 text-yellow-800',
     advanced: 'bg-red-100 text-red-800',
 };
+
+const ExerciseCard: React.FC<{ exercise: Exercise }> = ({ exercise }) => {
 
 return (
     <div className="max-w-xs mx-auto my-6 transform transition-all hover:scale-105">
@@ -51,12 +56,12 @@ return (
           >
             {exercise.level.charAt(0).toUpperCase() + exercise.level.slice(1)}
           </span>
-          <a
-            href={exercise.link}
+          <Link
+            to={`?id=${exercise.id}`}
             className="text-blue-400 hover:underline text-sm transition duration-300 ease-in-out"
           >
             Start Exercise
-          </a>
+          </Link>
         </div>
       </div>
     </div>
@@ -65,16 +70,28 @@ return (
 };
 
 function Training() {
-  return (
-  <div className="max-w-7xl mx-auto p-6">
-      <h1 className="text-3xl font-bold text-center">JavaScript Algorithm Exercises</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {exercises.map((exercise) => (
-          <ExerciseCard key={exercise.id} exercise={exercise} />
-        ))}
-      </div>
-    </div>
-  )
+
+    const id = useQuery("id")
+
+    const oneTrain = id ? exercises?.find(ex => String(ex.id) === id) : null
+
+    if(!oneTrain){
+        return (
+            <>
+            <div className="max-w-7xl mx-auto p-6">
+                <h1 className="text-3xl font-bold text-center">JavaScript Algorithm Exercises</h1>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {exercises.map((exercise) => (
+                    <ExerciseCard key={exercise.id} exercise={exercise} />
+                ))}
+                </div>
+            </div>
+            </>
+          )
+    }
+
+    return <ItemTraining exercise={oneTrain}/>
+
 }
 
 export default Training
