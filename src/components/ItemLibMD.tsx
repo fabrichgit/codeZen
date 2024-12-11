@@ -1,9 +1,10 @@
 import MarkdownPreview from '@uiw/react-markdown-preview';
+import { Link } from 'react-router-dom';
 
-function ItemLibMD({lib}: {lib: {title: string, description: string, example: string}}) {
+function ItemLibMD({lib, i}: {lib: {title: string, description: string, example: string}, i: number}) {
   return (
     <div className="block relative group transition hover:scale-105 hover:-rotate-1 w-[20rem]">
-        <a href="#" target="_blank" className="block w-full">
+        <Link to={`?id=${i}`} className="block w-full">
             <div className="relative w-full rounded-2xl h-[10rem] overflow-hidden">
                 <MarkdownPreview source={lib.example} className="w-full h-full object-center object-cover p-5" />
                 <div className='absolute z-50 top-0 left-0 w-full h-full inset-0 hover:backdrop-blur-[1px]'></div>
@@ -18,7 +19,7 @@ function ItemLibMD({lib}: {lib: {title: string, description: string, example: st
                     {lib.description}
                 </p>
             </div>
-        </a>
+        </Link>
     </div>
   )
 }
