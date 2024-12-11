@@ -29,7 +29,7 @@ function MdLibrary() {
                     <h1>{oneLib.title}</h1>
                     <p>{oneLib.description}</p>
                 </div>
-                <div className='flex flex-wrap flex-col gap-4 md:flex-row justify-between w-full h-max py-5 md:h-full'>
+                <div className='flex flex-wrap flex-col-reverse gap-4 md:flex-row justify-between w-full h-max py-5 md:h-full'>
                     <div className='w-[50%] p-5 py-0'>
                         <pre className='text-wrap bg-transparent w-full h-[50vh] rounded-xl p-3'>
                             {

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import {FaStar} from "react-icons/fa"
+import { IoLogoMarkdown } from "react-icons/io5"
+import { LuLibrary } from "react-icons/lu"
 
 function Header() {
   return (
@@ -29,8 +31,16 @@ function Header() {
             <div className="flex justify-between items-center">
             <a href="#" className="text-2xl font-bold">Badr</a>
             <div className="hidden md:flex space-x-6">
-            <Link to="/js-playground" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">JS Playground</Link>
+                <Link to="/js-playground/training" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">JS Playground</Link>
                 <Link to="/markdown-editor/library" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Markdown Editor</Link>
+            </div>
+            <div className="md:hidden flex space-x-2">
+                <Link to="/js-playground/training" className="block py-2 px-4 text-sm rounded-lg hover:bg-white hover:bg-opacity-20 transition-colors duration-300">
+                    <LuLibrary/>
+                </Link>
+                <Link to="/markdown-editor/library" className="block py-2 px-4 rounded-lg text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">
+                    <IoLogoMarkdown/>
+                </Link>
             </div>
             </div>
         </nav>
