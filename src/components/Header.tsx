@@ -17,8 +17,10 @@ function Header() {
                 <span className="font-black">VERSION3</span> code to get <span className="font-black">50% off</span>
             </p>
             </div>
-            <div className="mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto"><a className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50" href="#pricing">Give star <FaStar/>
-            </a>
+            <div className="mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto">
+                <a className="flex gap-2 items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-teal-600 shadow-sm hover:bg-teal-50" href="#pricing">
+                    Give star <FaStar className="-translate-y-[2px]"/>
+                </a>
             </div>
         </div>
         </div>
