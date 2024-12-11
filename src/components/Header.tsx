@@ -29,7 +29,7 @@ function Header() {
     <header className="backdrop-filter backdrop-blur-lg border-b border-neutral-600">
         <nav className="container mx-auto px-6 py-4">
             <div className="flex justify-between items-center">
-            <a href="#" className="text-2xl font-bold">Badr</a>
+            <Link to="/" className="text-2xl font-bold">CodeZen</Link>
             <div className="hidden md:flex space-x-6">
                 <Link to="/js-playground/training" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">JS Playground</Link>
                 <Link to="/markdown-editor/library" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Markdown Editor</Link>
