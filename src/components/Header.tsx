@@ -30,8 +30,8 @@ function Header() {
             <div className="flex justify-between items-center">
             <a href="#" className="text-2xl font-bold">Badr</a>
             <div className="hidden md:flex space-x-6">
+            <Link to="/js-playground" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">JS Playground</Link>
                 <Link to="/markdown-editor" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">Markdown Editor</Link>
-                <Link to="/js-playground" className="block py-2 px-4 text-sm hover:bg-white hover:bg-opacity-20 transition-colors duration-300">JS Playground</Link>
             </div>
             </div>
         </nav>
