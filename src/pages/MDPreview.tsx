@@ -5,12 +5,12 @@ function MDPreview() {
     const [source, setSource] = useState<string>("")
 
     return (
-        <div className='flex justify-between w-full h-full'>
-            <div className='w-full p-5'>
+        <div className='flex flex-col gap-4 md:flex-row justify-between w-full h-max md:h-full'>
+            <div className='w-full p-5 py-0'>
                 <textarea placeholder='# Write markdown here ...' onChange={(e) => setSource(e.currentTarget.value)} name="" id="" className='bg-transparent w-full h-[50vh] rounded-xl p-3'></textarea>
             </div>
-            <div className='w-full h-full overflow-y-auto'>
-                <MarkdownPreview source={source} style={{ padding: 16, width: "100%", height: "50vh" }} />
+            <div className='w-full h-max md:h-full overflow-y-auto'>
+                <MarkdownPreview source={source} style={{ padding: 16, width: "100%" }} />
             </div>
         </div>
     )
